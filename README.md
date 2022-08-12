@@ -28,13 +28,13 @@ const circle1 = new Circle({
     raduis: 15,
 });
 console.log(circle1.diameter, circle1.circumference, circle1.area);
-// result: 
+// result: 30, 94.24777960769379, 706.8583470577034
 
 const circle2 = new Circle({
     circumference: 40.5
 });
-console.log(circle2.raduis, circle2.diameter, circle2.area);
-// result: 
+console.log(circle2.radius, circle2.diameter, circle2.area);
+// result: 6.445775195221762, 12.891550390443523, 130.5269477032407
 ```
 
 ## Functions
@@ -54,8 +54,8 @@ If you need to calculate the properties without instantiating a Circle object, u
 import { circumferenceFromRadius, radiusFromCircumference } from "circle-properties";
 
 console.log(circumferenceFromRadius(15));
-// result: 
+// result: 94.24777960769379
 
 console.log(radiusFromCircumference(40.5));
-// result: 
+// result: 6.445775195221762
 ```
