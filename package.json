@@ -29,7 +29,7 @@
   "bugs": {
     "url": "https://github.com/andres-geotec/circle-properties/issues"
   },
-  "homepage": "https://github.com/andres-geotec/circle-properties#readme",
+  "homepage": "https://andres-geotec.github.io/circle-properties",
   "devDependencies": {
     "typescript": "^4.7.4"
   }
