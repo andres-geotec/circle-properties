@@ -7,8 +7,6 @@ Use this library to get the properties of a geometric circle from any of its mea
 ## Usage
 
 ```javascript
-import Circle from "circle-properties";
-
 const circle = new Circle({
     ... // any measure or property
 });
