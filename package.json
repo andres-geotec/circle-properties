@@ -17,10 +17,12 @@
     "circle",
     "geometry",
     "trigonometry",
+    "mathematics",
     "radius",
     "pi",
     "diameter",
-    "circumference"
+    "circumference",
+    "area"
   ],
   "author": "Andrés Martínez González <andres.geotec@gmail.com> (https://github.com/andres-geotec)",
   "license": "MIT",
