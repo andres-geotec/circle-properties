@@ -14,12 +14,12 @@ const circle = new Circle({
 
 ## Properties
 
-* Circumference: The boundary of the circle is known as the circumference
-* Radius: The line from the centre “O” of the circle to the circumference of the circle is called the radius and it is denoted by “R” or “r”
-* Diameter: The line that passes through the centre of the circle and touches the two points on the circumference is called the diameter and it is denoted by the symbol “D” or “d”
+* Circumference: Boundary measure of the circle or perimeter.
+* Radius: The distance from the center of the circle to the circumference.
+* Diameter: The line measure that passes through the centre of the circle and touches the two points on the circumference.
 
 
-## Example
+### Example
 
 ```javascript
 import Circle from "circle-properties";
@@ -34,5 +34,28 @@ const circle2 = new Circle({
     circumference: 40.5
 });
 console.log(circle2.raduis, circle2.diameter, circle2.area);
+// result: 
+```
+
+## Functions
+
+If you need to calculate the properties without instantiating a Circle object, use the functions:
+
+* `circumferenceFromRadius(radius)` Calculate the circumference from the radius of a circle.
+* `circumferenceFromDiameter(diameter)` Calculate the circumference from the diameter of a circle.
+* `radiusFromCircumference(circumference)` Calculate the radius from the circumference of a circle.
+* `radiusFromDiameter(diameter)` Calculate the radius from the diameter of a circle.
+* `diameterFromCircumference(circumference)` Calculate the diameter from the circumference of a circle.
+* `diameterFromRadius(radius)` Calculate the diameter from the radius of a circle.
+
+### Example
+
+```javascript
+import { circumferenceFromRadius, radiusFromCircumference } from "circle-properties";
+
+console.log(circumferenceFromRadius(15));
+// result: 
+
+console.log(radiusFromCircumference(40.5));
 // result: 
 ```
