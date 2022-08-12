@@ -2,8 +2,13 @@
   "name": "circle-properties",
   "version": "0.0.0",
   "description": "This library allows obtaining the properties of a geometric circle from any of its measurements.",
-  "main": "index.js",
-  "scripts": {},
+  "main": "dist-node/index.js",
+  "browser": "dist-browser/index.js",
+  "scripts": {
+    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
+    "build-node": "tsc src/index.ts --outDir dist-node",
+    "build": "npm run build-browser & npm run build-node"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andres-geotec/circle-properties.git"
@@ -22,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/andres-geotec/circle-properties/issues"
   },
-  "homepage": "https://github.com/andres-geotec/circle-properties#readme"
+  "homepage": "https://github.com/andres-geotec/circle-properties#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
