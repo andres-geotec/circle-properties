@@ -5,8 +5,8 @@
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
   "scripts": {
-    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6",
-    "build-node": "tsc src/index.ts --outDir dist-node",
+    "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6 --target es6",
+    "build-node": "tsc src/index.ts --outDir dist-node --module ES6 --target es6",
     "build": "npm run build-browser & npm run build-node"
   },
   "repository": {

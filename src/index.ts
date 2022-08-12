@@ -14,16 +14,79 @@
  * @classdesc
  */
 class Circle {
-    properties: object;
+    properties: {
+        circumference: number,
+        radius: number,
+        diameter: number,
+    };
 
     /**
     * @param {Options} options Circle options.
     */
-    constructor(options: object) {
+    constructor(options: {
+        circumference: number,
+        radius: number,
+        diameter: number,
+    }) {
         /**
          * @private
          */
         this.properties = options;
+    }
+
+    /**
+     * @returns {number} circumference Boundary measure of the circle or perimeter.
+     */
+    public get circumference(): number | undefined {
+        if (this.properties.circumference) return this.properties.circumference;
+
+        if (this.properties.radius) {
+            return circumferenceFromRadius(this.properties.radius);
+        }
+
+        if (this.properties.diameter) {
+            return circumferenceFromDiameter(this.properties.diameter);
+        }
+    }
+
+    /**
+     * @returns {number} radius The distance from the center of the circle to the circumference.
+     */
+    public get radius(): number | undefined {
+        if (this.properties.radius) return this.properties.radius;
+
+        if (this.properties.circumference) {
+            return radiusFromCircumference(this.properties.circumference);
+        }
+
+        if (this.properties.diameter) {
+            return radiusFromDiameter(this.properties.diameter);
+        }
+    }
+
+    /**
+     * @returns {number} diameter The line measure that passes through the centre of the circle
+     * and touches the two points on the circumference.
+     */
+    public get diameter(): number | undefined {
+        if (this.properties.diameter) return this.properties.diameter;
+
+        if (this.properties.circumference) {
+            return diameterFromCircumference(this.properties.circumference);
+        }
+
+        if (this.properties.radius) {
+            return diameterFromRadius(this.properties.radius);
+        }
+    }
+
+    /**
+     * @returns {number} area Square area of a geometric circle in two dimensions
+     */
+    get area(): number | undefined {
+        if (this.radius) {
+            return Math.PI * Math.pow(this.radius, 2);
+        }
     }
 }
 
