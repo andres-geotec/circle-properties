@@ -1,0 +1,26 @@
+{
+  "name": "circle-properties",
+  "version": "0.0.0",
+  "description": "This library allows obtaining the properties of a geometric circle from any of its measurements.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres-geotec/circle-properties.git"
+  },
+  "keywords": [
+    "circle",
+    "geometry",
+    "trigonometry",
+    "radius",
+    "pi",
+    "diameter",
+    "circumference"
+  ],
+  "author": "Andrés Martínez González <andres.geotec@gmail.com> (https://github.com/andres-geotec)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andres-geotec/circle-properties/issues"
+  },
+  "homepage": "https://github.com/andres-geotec/circle-properties#readme"
+}
