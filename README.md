@@ -4,7 +4,7 @@ Lines and circles are the important elementary figures in geometry. We know that
 
 Use this library to get the properties of a geometric circle from any of its measurements.
 
-| [hompahe](https://andres-geotec.github.io/circle-properties/) | [npm](https://www.npmjs.com/package/circle-properties) | [github](https://github.com/andres-geotec/circle-properties) |
+| [hompage](https://andres-geotec.github.io/circle-properties/) | [npm](https://www.npmjs.com/package/circle-properties) | [github](https://github.com/andres-geotec/circle-properties) |
 | -- | -- | -- |
 
 ## Install
