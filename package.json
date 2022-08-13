@@ -1,6 +1,6 @@
 {
   "name": "circle-properties",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "This library allows obtaining the properties of a geometric circle from any of its measurements.",
   "main": "dist-node/index.js",
   "browser": "dist-browser/index.js",
