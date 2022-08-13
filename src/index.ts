@@ -12,6 +12,8 @@
 
 /**
  * @classdesc
+ * This library allows obtaining the properties of a geometric circle from any of its
+ * measurements.
  */
 class Circle {
     properties: {
@@ -83,7 +85,7 @@ class Circle {
     /**
      * @returns {number} area Square area of a geometric circle in two dimensions
      */
-    get area(): number | undefined {
+    public get area(): number | undefined {
         if (this.radius) {
             return Math.PI * Math.pow(this.radius, 2);
         }

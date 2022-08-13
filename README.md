@@ -9,7 +9,7 @@ Use this library to get the properties of a geometric circle from any of its mea
 
 ## Install
 
-### [npm](https://www.npmjs.com/package/circle-properties)
+### npm
 
 ```npm
 npm i circle-properties
@@ -28,7 +28,7 @@ const circle = new Circle({
 * **Circumference**: Boundary measure of the circle or perimeter.
 * **Radius**: The distance from the center of the circle to the circumference.
 * **Diameter**: The line measure that passes through the centre of the circle and touches the two points on the circumference.
-* **area**: Square area of a geometric circle in two dimensions
+* **Area**: Square area of a geometric circle in two dimensions.
 
 
 ### Example
