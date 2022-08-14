@@ -1,3 +1,4 @@
-/node_modules
-/dist-node
-/dist-browser
+/node_modules/
+/dist-node/
+/dist-browser/
+/build/

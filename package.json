@@ -7,7 +7,9 @@
   "scripts": {
     "build-browser": "tsc src/index.ts --outDir dist-browser --module ES6 --target es6",
     "build-node": "tsc src/index.ts --outDir dist-node --module ES6 --target es6",
-    "build": "npm run build-browser & npm run build-node"
+    "build": "npm run build-browser & npm run build-node",
+    "pre-transpile": "shx rm -rf build/circle-properties && shx mkdir -p build/circle-properties && shx cp -rf src build/circle-properties/src",
+    "transpile": "node tasks/serialize-workers.cjs"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
   },
   "homepage": "https://andres-geotec.github.io/circle-properties",
   "devDependencies": {
+    "shx": "^0.3.4",
     "typescript": "^4.7.4"
   }
 }
