@@ -2,8 +2,6 @@
   "name": "circle-properties",
   "version": "0.1.1",
   "description": "This library allows obtaining the properties of a geometric circle from any of its measurements.",
-  "main": "dist-node/index.js",
-  "browser": "dist-browser/index.js",
   "scripts": {
     "pre-transpile": "shx rm -rf build/circle-properties && shx mkdir -p build/circle-properties && shx cp -rf src build/circle-properties/src",
     "transpile": "npm run pre-transpile && tsc --project config/tsconfig-build.json",
