@@ -63,7 +63,7 @@ If you need to calculate the properties without instantiating a Circle object, u
 ### Example
 
 ```javascript
-import { circumferenceFromRadius, radiusFromCircumference } from "circle-properties";
+import { circumferenceFromRadius, radiusFromCircumference } from "circle-properties/functions";
 
 console.log(circumferenceFromRadius(15));
 // result: 94.24777960769379
