@@ -1,5 +1,5 @@
 /**
- * @module circle-functions
+ * @module functions
  */
 
 /**

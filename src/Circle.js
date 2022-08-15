@@ -2,7 +2,7 @@
  * @module Circle
  */
 
-import * as fns from "./circle-functions";
+import * as fns from "./functions";
 
 /**
  * @typedef {Object} Options

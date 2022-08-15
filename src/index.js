@@ -5,4 +5,4 @@
 import Circle from "./Circle";
 
 export default Circle;
-export * from "./circle-functions";
+export * from "./functions";
