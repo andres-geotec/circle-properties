@@ -82,6 +82,14 @@ class Circle {
       return Math.PI * Math.pow(this.radius, 2);
     }
   }
+
+  radianAngle(angle) {
+    return {
+      sideOpposite: this.radius * Math.sin(angle),
+      sideAdjacent: this.radius * Math.cos(angle),
+      sides: []
+    };
+  }
 }
 
 export default Circle;
