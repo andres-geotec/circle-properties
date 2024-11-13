@@ -6,8 +6,9 @@
     "build-package": "npm run transpile && npm run generate-types && node tasks/prepare-package.js",
     "clean": "rm -rf build && rm -rf node_modules && rm package-lock.json && npm cache clean -f && npm cache verify",
     "generate-types": "tsc --project config/tsconfig-build.json --declaration --declarationMap --emitDeclarationOnly --outdir build/circle-properties",
-    "pre-transpile": "shx rm -rf build/circle-properties && shx mkdir -p build/circle-properties && shx cp -rf src build/circle-properties/src",
+    "pre-transpile": "shx rm -rf build/circle-properties/* && shx mkdir -p build/circle-properties && shx cp -rf src build/circle-properties/src",
     "reinstall": "npm run clean && npm i",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "npm run pre-transpile && tsc --project config/tsconfig-build.json"
   },
   "type": "module",
